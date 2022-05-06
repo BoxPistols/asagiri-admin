@@ -1,3 +1,70 @@
-/* @import "./node_modules/asagiri/style.css"; */
-/* @import "https://raw.githubusercontent.com/BoxPistols/asagiri/css/main.css"; */
-/* @import "https://cdn.jsdelivr.net/npm/asagiri"; */
+a {
+  transition: 0.25s;
+}
+
+a:focus,
+a:hover {
+  color: var(--color-secondary-light);
+}
+
+body {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.container,
+.wrap {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.container {
+  flex-direction: column;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+.nav {
+  padding: 0 2vw;
+}
+.nav ul {
+  margin: 0.5rem;
+}
+.nav ul li {
+  margin: 0 0.5rem;
+}
+
+.sidebar {
+  width: 8rem;
+  padding: 1rem;
+  min-height: 100vh;
+  display: block;
+  scroll-behavior: smooth;
+}
+
+.sidebar .top {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.sidebar li {
+  margin: 0.2rem 0;
+}
+
+/* Hero */
+.box.hero {
+  width: auto;
+  padding-bottom: 1.5em;
+  /* background-color: var(--color-background); */
+  /* box-shadow: none; */
+  /* background-image: url("http://placeimg.com/1280/480/any");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; */
+}
+
+.box.hero > p {
+  margin-top: 0.5em;
+}
