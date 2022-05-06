@@ -1,3 +1,4 @@
+/*
 .sidebar {
   display: block;
   // min-width: 8rem;
@@ -19,5 +20,79 @@
     li {
       margin: 0.25rem 0;
     }
+  }
+}
+*/
+
+// reset
+.nav {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 220px;
+  background-color: #333;
+  height: 100%;
+}
+
+.nav.isClose li a {
+  padding: 20px 15px 20px 50px;
+}
+.nav li {
+  a {
+    position: relative;
+    display: block;
+    padding: 20px 15px 20px 80px;
+    font-size: 14px;
+    color: #eee;
+    border-bottom: 1px solid #222;
+    transition: 0.3s;
+    &:hover {
+      background: #444;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    &.active,
+    &:active {
+      box-shadow: inset 5px 0 0 #5b5, inset 6px 0 0 #222;
+      background: #699;
+    }
+    &:before {
+      font: 18px fontawesome;
+      position: absolute;
+      top: 22px;
+      left: 20px;
+    }
+  }
+
+  &:nth-child(1) a:before {
+    content: "\f00a";
+  }
+  &:nth-child(2) a:before {
+    content: "\f012";
+  }
+  &:nth-child(3) a:before {
+    content: "\f0e8";
+  }
+  &:nth-child(4) a:before {
+    content: "\f0c3";
+  }
+  &:nth-child(5) a:before {
+    content: "\f022";
+  }
+  &:nth-child(6) a:before {
+    content: "\f115";
+  }
+  &:nth-child(7) a:before {
+    content: "\f085";
+  }
+  &:nth-child(8) a:before {
+    content: "\f023";
+    left: 23px;
   }
 }

@@ -12,8 +12,335 @@ html(lang="ja")
     link(rel="stylesheet", href="./style.css")
     title Micro CSS Framework / Morning Fog
   body
+    .wrap
+      .header
+        .heading-text HEADING
+      .sidebar
+        .title Sidebar
+        //- -# TODO: small text under icon
+        ul.nav.isClose
+          li
+            a(href="#") Dashboard
+          li
+            a.active Statistics
+          li
+            a(href="#Grid") Grid
+          li
+            a Experiments
+          li
+            a Previews
+          li
+            a Assets
+          li
+            a Settings
+          li
+            a Logout
+      .content.isOpen
+        a.toggle.flex.flex-ai-center toggle
+        h1 Flexbox Off Canvas Menu
+        h2 Lightweight, simple, easy to use
+        .inner-contents
+          .section
+            .card
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas libero exercitationem distinctio, enim consequuntur molestias repellat, aspernatur ex blanditiis sint culpa! Neque deleniti quidem consectetur ducimus ipsa dolore in id amet pariatur ut at, et repellendus natus rerum necessitatibus ex enim dolores maxime magni earum sapiente velit animi! Similique maiores maxime eveniet nisi porro praesentium beatae fugiat hic quaerat laudantium! Quidem eveniet odit delectus, distinctio unde assumenda expedita voluptatem ipsam quis id ducimus magnam nulla, incidunt velit non sunt labore quos laborum, quae blanditiis nisi repellat adipisci mollitia? Delectus animi voluptatem dolor magnam illum obcaecati inventore officia cumque rem earum.
+          .section
+            .card
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur iste quam eveniet asperiores quibusdam, aut, nisi in veritatis quaerat rerum! Soluta accusamus aliquid consequatur cupiditate quisquam modi dolor, optio praesentium aut quia pariatur fugit minus harum temporibus animi totam vel ut. Reiciendis error iste, quo, dignissimos repellendus, eaque minus quibusdam quaerat qui rem amet et harum inventore at illum. Tenetur fugit perferendis molestiae, nesciunt iusto voluptatum doloribus velit! Omnis dolor nemo adipisci consequatur ut sit iure. Voluptatem repellendus harum voluptatibus ducimus, aperiam distinctio soluta sequi obcaecati beatae labore voluptate repellat mollitia officiis, pariatur eaque dolore officia vero suscipit quod.
+                // hero
+          // Asagiri Contents
+          .container
+            .box.hero
+              h1.design-font-en.mg-0 Asagiri
+              p Micro CSS Framework
+            .flex.horizontal-grids
+              section#Typography.section
+                h1.design-font-en Typography
+                .flex.horizontal-grids
+                  div
+                    h2.design-font-en heading
+                    h1 h1 Heading
+                    h2 h2 Heading
+                    h3 h3 Heading
+                    h4 h4 Heading
+                    h5 h5 Heading
+                    h6 h6 Heading
+                    hr
+                    h2.design-font-en Color
+                    p.color-secondary secondary
+                    p.color-accent accent
+                    p.color-success success
+                    p.color-warning warning
+                    p.color-danger danger
+                    p.color-info info
+                    p.color-elegant elegant
+                    h2.design-font-en Othes
+                    p Paragraph
+                    a Anchor
+                    br
+                    em Emphasis
+                    br
+                    small Small
+                    br
+                    strong Strong
+                    br
+                    u Underline
+                    hr
+                    h2.design-font-en Blockquotes
+                    blockquote
+                      p
+                        em Qui sit itaque praesentium
+                    hr
+                    h2.design-font-en Code
+                    pre
+                      code .hoge {color: var(--color-primary);}
+              section.section.fit.max.mvw-50
+                h1.design-font-en List
+                .flex.horizontal-grids
+                  div
+                    h4 normal
+                    ul
+                      li Unordered list item 1
+                      li Unordered list item 2
+                    h4 circle
+                    ul.circle
+                      li circle Unordered list item 1
+                      li circle Unordered list item 2
+                    h4 disc
+                    ul.disc
+                      li disc Unordered list item 1
+                      li disc Unordered list item 2
+                    h4 disc in disc
+                    ul.disc
+                      li disc Unordered list item 1
+                      li disc Unordered list item 2
+                      ul.disc
+                        li disc Unordered list item 1
+                        li disc Unordered list item 2
+                  div
+                    h4 ol
+                    ol
+                      li Ordered list item 1
+                      li Ordered list item 2
+                    h4 ol in ol
+                    ol
+                      li Ordered list item 1
+                      li Ordered list item 2
+                      ol
+                        li Ordered list item 1
+                        li Ordered list item 2
+                    h4 dl
+                    dl
+                      dt Description list item 1
+                      dd Description list item 1.1
+              section#Form.section.fit
+                h1.design-font-en Form
+                form
+                  fieldset.flex.flex-column
+                    div
+                      label(for="nameField") Name
+                      input#nameField(type="text", placeholder="CJ Patoilo")
+                    div
+                      label(for="ageRangeField") Age Range
+                      select#ageRangeField
+                        option(value="0-13") 0-13
+                        option(value="14-17") 14-17
+                        option(value="18-23") 18-23
+                        option(value="24+") 24+
+                    div
+                      label(for="commentField") Comment
+                      textarea#commentField(placeholder="Hi CJ …")
+                    div
+                      h4 Select One
+                      fieldset.flex.flex-column
+                        legend Select a maintenance this:
+                        div
+                          input#huey(type="radio", name="drone", value="huey", checked="checked")
+                          label.label-inline(for="huey") Huey
+                        div
+                          input#dewey(type="radio", name="drone", value="dewey")
+                          label.label-inline(for="dewey") Dewey
+                        div
+                          input#louie(type="radio", name="drone", value="louie")
+                          label.label-inline(for="louie") Louie
+                    div
+                      h4 Select Checkbox
+                      fieldset.flex.flex-column
+                        div
+                          input#checkItem(type="checkbox")
+                          label.label-inline(for="checkItem") Katie Love
+                        div
+                          input#checkItem2(type="checkbox")
+                          label.label-inline(for="checkItem2") Beau Branch
+                    div
+                      input#confirmField(type="checkbox")
+                      label.label-inline(for="confirmField") Send a copy to yourself
+                    input.button-primary(type="submit", value="Send")
+            .flex.horizontal-grids
+              section.section.fit.max.mvw-50
+                h1.design-font-en Button
+                .flex.flex-column.vertical-grids
+                  div
+                    h2.design-font-en Default
+                    button.button Normal
+                    button.button.button-outline Outlined
+                    button.button.button-cancel Cancel
+                    input.button.button-clear(type="submit", value="Clear")
+                  div
+                    h2.design-font-en Disabled
+                    button.button(disabled="disabled") Disabled
+                    button.button.button-cancel(disabled="disabled") Cancel(disabled)
+                  div
+                    h2.design-font-en Variarions
+                    h3 background
+                    .button.btn-secondary secondary
+                    .button.btn-accent accent
+                    .button.btn-success success
+                    .button.btn-warning warning
+                    .button.btn-danger danger
+                    .button.btn-info info
+                    .button.btn-elegant elegant
+                    h3 outline
+                    .button.btn-outline-secondary secondary
+                    .button.btn-outline-accent accent
+                    .button.btn-outline-success success
+                    .button.btn-outline-warning warning
+                    .button.btn-outline-danger danger
+                    .button.btn-outline-info info
+                    .button.btn-outline-elegant elegant
+              section.section.fit.max.mvw-50
+                h1.design-font-en Table
+                .flex.flex-column
+                  .space-pd
+                    h2.design-font-en Default
+                    table
+                      thead
+                      tr
+                        th Name
+                        th Age
+                        th Height
+                        th Location
+                      tbody
+                        tr
+                          td Stephen Curry
+                          td 27
+                          td 1,91
+                          td Akron, OH
+                        tr
+                          td Klay Thompson
+                          td 25
+                          td 2,01
+                          td Los Angeles, CA
+                        tr
+                          td Hamish Barton
+                          td 22
+                          td 3,25
+                          td Qui Quibusdam Saepe
+                        tr
+                          td Niall Glover
+                          td 29
+                          td 1,87
+                          td Eum Fuga Sed Optio
+                        tr
+                          td Casey Rose
+                          td 32
+                          td 1,99
+                          td Ea sit quos aliquid ut rem
+                  .space-pd
+                    h2.design-font-en Dark + Stripe
+                    table.stripe
+                      thead.dark
+                        tr
+                          th Name
+                          th Age
+                          th Height
+                          th Location
+                        tbody
+                          tr
+                            td Stephen Curry
+                            td 27
+                            td 1,91
+                            td Akron, OH
+                          tr
+                            td Klay Thompson
+                            td 25
+                            td 2,01
+                            td Los Angeles, CA
+                          tr
+                            td Hamish Barton
+                            td 22
+                            td 3,25
+                            td Qui Quibusdam Saepe
+                          tr
+                            td Niall Glover
+                            td 29
+                            td 1,87
+                            td Eum Fuga Sed Optio
+                          tr
+                            td Casey Rose
+                            td 32
+                            td 1,99
+                            td Ea sit quos aliquid ut rem
+              // Grid
+              section#Grid.section.w-100
+                h1.design-font-en GridColumn
+                .mg-container.column-show
+                  .row
+                    .column .column
+                    .column .column
+                    .column .column
+                    .column .column
+                  .row
+                    .column .column
+                    .column.column-offset-25 column-offset-25
+                  .row
+                    .column.column-25 .column-25
+                    .column.column-offset-auto column-offset-auto
+                  .row.row-bottom
+                    .column.column-25 column-offset-25
+                  .row
+                    .column .column
+                    .column.column-50.column-offset-25 .column-50.column-offset-25
+                  .row
+                    .column.column-66 .column-66
+                    .column.column-auto .column-auto
+                  .row
+                    .column.column-33 .column-33
+                    .column.column-auto .column-auto
+                .mg-container.column-show.sp-column
+                  .row
+                    .column .column
+                    .column .column
+                    .column .column
+                    .column .column
+                  .row
+                    .column.column-10 10%
+                  .row
+                    .column.column-20 20%
+                  .row
+                    .column.column-25 25%
+                  .row
+                    .column.column-33 33%
+                  .row
+                    .column.column-40 40%
+                  .row
+                    .column.column-50 50%
+                  .row
+                    .column.column-60 60%
+                  .row
+                    .column.column-66 66%
+                  .row
+                    .column.column-75 75%
+                  .row
+                    .column.column-80 80%
+                  .row
+                    .column.column-90 90%
+                  .row
+                    .column 100%
+
+    script(src="script.js")
+
     // header
-    header.header
+    //- header.header
       nav.nav.flex.flex-ai-center.flex-jc-between
         .logo
           a(href="#") Asagiri / Micro CSS Framework
@@ -24,7 +351,7 @@ html(lang="ja")
             a(href="#") list
           li
             a(href="#") list
-    .wrap
+      .wrap
       // Sidebar
       sidebar.sidebar
         .list.flex.flex-column
