@@ -1,0 +1,17 @@
+/* Hero */
+.box.hero {
+  width: auto;
+  padding-bottom: 1.5em;
+
+  background-color: var(--color-background);
+  background-image: url("http://placeimg.com/1280/480/any");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  // box-shadow: none;
+  text-shadow: var(--text-shadow);
+  > p {
+    margin-top: 0.5em;
+    color: var(--color-white);
+  }
+}

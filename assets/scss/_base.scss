@@ -1,0 +1,26 @@
+a {
+  transition: 0.25s;
+}
+
+a:focus,
+a:hover {
+  color: var(--color-secondary-light);
+}
+
+body {
+  font-size: 16px;
+
+  scroll-behavior: smooth;
+}
+
+.wrap {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  flex-direction: column;
+  margin: 0;
+  // padding: 0;
+  // margin-left: 140px;
+}

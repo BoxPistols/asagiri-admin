@@ -19,7 +19,7 @@
 
 <body>
   <!-- header -->
-  <header class="header" style="background: var(--color-primary-light); color: var(--color-white);">
+  <header class="header">
     <nav class="nav flex flex-ai-center flex-jc-between">
       <div class="logo">
         <a href="#">Asagiri / Micro CSS Framework</a>
@@ -41,20 +41,20 @@
   <div class="wrap">
 
     <!-- Sidebar -->
-    <sidebar class="sidebar" style="background: var(--color-primary-dark); color: var(--color-white);">
-      <div class="list flex flex-column flex-jc-start">
+    <sidebar class="sidebar">
+      <div class="list flex flex-column ">
         <div class="top">
           <a href="#">Asagiri</a>
         </div>
-        <ul class="flex flex-column flex-jc-start">
+        <ul class="flex flex-column">
           <li>
-            <a href="#form">form</a>
+            <a href="#Typography">Typography</a>
           </li>
           <li>
-            <a href="#">list</a>
+            <a href="#Form">Form</a>
           </li>
           <li>
-            <a href="#">list</a>
+            <a href="#Grid">Grid</a>
           </li>
         </ul>
 
@@ -62,7 +62,6 @@
     </sidebar>
 
     <!-- hero -->
-
 
     <!-- Contents -->
     <div class="container">
@@ -74,7 +73,7 @@
 
       <div class="flex horizontal-grids">
 
-        <section class="section">
+        <section class="section" id="Typography">
           <h1 class="design-font-en">Typography</h1>
           <div class="flex horizontal-grids">
             <div>
@@ -169,8 +168,8 @@
           </div>
         </section>
 
-        <section class="section fit">
-          <h1 class="design-font-en" id="form">Form</h1>
+        <section class="section fit" id="Form">
+          <h1 class="design-font-en">Form</h1>
           <form>
             <fieldset class="flex flex-column">
               <div>
@@ -363,7 +362,8 @@
             </div>
           </div>
         </section>
-        <section class="section w-100">
+        <!-- Grid -->
+        <section class="section w-100" id="Grid">
           <h1 class="design-font-en">GridColumn</h1>
           <div class="mg-container column-show">
             <div class="row">
